@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: payment
+  cloud:
+    config:
+      failFast: false # change it to true
+      uri: http://localhost:8888
+---
+spring:
+  profiles: development
+  application:
+    name: payment
+  cloud:
+    config:
+      failFast: false # change it to true
+      uri: https://config-server-xapi.cfapps.io/
