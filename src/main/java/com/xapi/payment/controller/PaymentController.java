@@ -35,7 +35,7 @@ public class PaymentController {
 	
 //	@CrossOrigin
 	@RequestMapping(value = "/{user_id}", method = RequestMethod.GET)
-	public ResponseEntity<?> getUserPayments(@PathVariable("user_id") Integer userId, HttpServletRequest request){ //ResponseEntity<Collection<PaymentAccounts>>
+	public ResponseEntity<?> getUserPayments(@PathVariable("user_id") Long userId, HttpServletRequest request){ //ResponseEntity<Collection<PaymentAccounts>>
 		String info = "Metod getUserPayments( Integer userId) NOT IMPLEMENTED YET" + 
 				"\nGet ALL User's placed PAYMENTS by user Id" + "\n Parameters, user Id = " + userId
 				+ "\n" + "method = " + request.getMethod() +  ", URI - " + request.getRequestURI() + ", URL - " + request.getRequestURL() + ", -->" + RequestMethod.GET.toString();
